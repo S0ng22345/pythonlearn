@@ -3,7 +3,7 @@ from stable_baselines3 import PPO
 import numpy as np
 
 env = gym.make("CartPole-v1", render_mode="human")
-model = PPO.load("ppo_cartpole")
+model = PPO.load("ppo_cartpole_100k")
 
 # 跑 10 局，统计得分
 episode_rewards = []
